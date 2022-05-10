@@ -1,0 +1,5 @@
+#Telegram Bot for SDoge Crypto Address Pulling
+
+***Summary***
+-Chat bot that filters telegram messages containing SDoge addresses, collects, and stores them into a google sheets csv file.
+-Addresses are timestamp, username, name, address 
