@@ -1,0 +1,59 @@
+
+var token = ""; //Token of Telegram Bot
+var telegramUrl = "https://api.telegram.org/bot" + token;  //connects bot and telegram chat
+var webAppUrl = [Webapp url goes here] -> example: "https://script.google.com/macros/s/bunchofletters";
+var ssId = ""; //https://docs.google.com/spreadsheets/d/[Address needed here]
+
+
+function getMe() //gets the bot info
+{
+  var url = telegramUrl + "/getme";
+  var response = UrlFetchApp.fetch(url); 
+  Logger.log(response.getContentText());
+}
+
+function setWebhook() //links url of project 
+{
+  var url = telegramUrl + "/setWebhook?url=" + webAppUrl;
+  var response = UrlFetchApp.fetch(url); 
+  Logger.log(response.getContentText());
+}
+
+function sendText(id,text) //sends confirmation text
+{
+  var url = telegramUrl + "/sendMessage?chat_id=" + id + "&text=" + text;
+  var response = UrlFetchApp.fetch(url); 
+  Logger.log(response.getContentText());
+}
+
+
+function doPost(e) //
+{
+  var data = JSON.parse(e.postData.contents);
+  var str = data.message.text.toUpperCase();
+  var text = str.replace(/\n/g," ");  
+  var id = data.message.from.id;
+  var name = data.message.from.first_name + " " + data.message.from.last_name;
+  
+  //confirmation text
+  //var responsee = "processing message: " + text;
+ // sendText(id,responsee);
+
+//text filtering cmds
+ str = text.match(/(\bg\S+\b)/ig); //finds all words starting with "G" and puits them into an array
+ const result = JSON.stringify(str.filter(word => word.length > 55)); //converts to JSON for spreadsheet and filters out any words that are less than 56 characters
+ SpreadsheetApp.openById(ssId).getSheets()[0].appendRow([new Date(),id,name,result.replace(/[^\w\s]/gi,'')]); //adds filtered text to spreadsheet
+
+ //Additional functions for future if needed. 
+  if(/^@/.test(text)) //creates a new spreadsheet tab if ' @ ' is before word
+  {
+    var sheetName = text.slice(1).split(" ")[0];
+    var sheet = SpreadsheetApp.openById(ssId).getSheetByName(sheetName) ? SpreadsheetApp.openById(ssId).getSheetByName(sheetName)  : SpreadsheetApp.openById(ssId).insertSheet(sheetName);
+    var comment = text.split(" ").slice(1).join(" "); 
+    //sheet.appendRow([new Date(),id,name,comment,answer]);
+     sheet.appendRow([new Date(),id,name,comment,response]);
+  }
+  
+} 
+
+//steller 56 characters and starts with G
