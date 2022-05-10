@@ -1,1 +1,5 @@
 #Folder for all ASM Projects & Practice
+
+*Note
+-All Programs require the Irvine32.INC Library
+Dont forget! -> INCLUDE Irvine32.inc (May need to download library from web)
