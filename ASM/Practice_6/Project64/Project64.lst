@@ -1,0 +1,128 @@
+Microsoft (R) Macro Assembler (x64) Version 11.00.61030.0   11/11/14 23:38:44
+..\main.asm						     Page 1 - 1
+
+
+				;//Aaron Lim
+				;//CSIS-118B-4179
+				;//September 23, 2014
+				;//Practice_6
+
+				ExitProcess proto
+				WriteInt64 proto
+				DumpRegs proto
+				WriteString proto
+
+ 00000000			.data 								;//write your data in this section
+
+ 00000000			intarray QWORD 1000000000000h,2000000000000h,3000000000000h,4000000000000h
+	   0001000000000000
+	   0002000000000000
+	   0003000000000000
+	   0004000000000000
+							   
+
+ 00000020 54 68 65 20 73	    msg1 BYTE "The sum of the array elements: ", 0dh,0ah,0
+	   75 6D 20 6F 66
+	   20 74 68 65 20
+	   61 72 72 61 79
+	   20 65 6C 65 6D
+	   65 6E 74 73 3A
+	   20 0D 0A 00
+ 00000042 54 68 65 20 64		msg2 BYTE "The difference of the array elements: ", 0dh,0ah,0
+	   69 66 66 65 72
+	   65 6E 63 65 20
+	   6F 66 20 74 68
+	   65 20 61 72 72
+	   61 79 20 65 6C
+	   65 6D 65 6E 74
+	   73 3A 20 0D 0A
+	   00
+ 0000006B 0D 0A 00			endl BYTE 0dh,0ah,0,	
+
+ 00000000			.code  								;//write your program here
+ 00000000			main proc
+
+ 00000000  48/ BF			mov rdi,OFFSET intarray			;// RDI = address of intarray
+	   0000000000000000 R
+ 0000000A  48/ C7 C1			mov rcx,LENGTHOF intarray		;// initialize loop counter
+	   00000004
+ 00000011  48/ C7 C0			mov rax,0						;//sum = 0
+	   00000000
+
+ 00000018  48/ BA			mov rdx,offset msg1				;//moves into edx register the first message string
+	   0000000000000020 R
+ 00000022  E8 00000000 E		call WriteString				;//moves the message to the console
+
+ 00000027			L1:									;//mark beginning of loop
+ 00000027  48/ 03 07			add rax,[rdi]					;//add an integer
+ 0000002A  48/ 83 C7 08			add rdi,TYPE intarray			;//point to next element
+ 0000002E  E2 F7			loop L1							;//repeat until RCX = 0
+ 00000030  B9 00000000			mov   ecx,0						;//assign a process return code, exit process return value
+ 00000035  E8 00000000 E		call WriteInt64					;//outputs the result to the console
+
+					
+
+					;//begin code for subtraction of elements
+
+ 0000003A  48/ BF			mov rdi,OFFSET intarray			;// RDI = address of intarray
+	   0000000000000000 R
+ 00000044  48/ C7 C1			mov rcx,LENGTHOF intarray - 1 		;// initialize loop counter
+	   00000003
+					
+
+ 0000004B  48/ BA			mov rdx,offset endl				;//moves into edx register the endl message string
+	   000000000000006B R
+ 00000055  E8 00000000 E		call WriteString				;//moves the message to the console
+ 0000005A  48/ BA			mov rdx,offset endl				;//moves into edx register the endl message string
+	   000000000000006B R
+ 00000064  E8 00000000 E		call WriteString				;//moves the message to the console
+ 00000069  48/ BA			mov rdx,offset msg2				;//moves into edx register the second message string
+	   0000000000000042 R
+ 00000073  E8 00000000 E		call WriteString				;//moves the message to the console
+
+ 00000078			L2:									;//Mark beginning of second loop
+ 00000078  48/ 8B 07			mov rax,[rdi]					;//Move first element to rax					
+ 0000007B  48/ 83 C7 08			add rdi,TYPE intarray			;//point to next element
+ 0000007F  48/ 2B 07			sub rax,[rdi]					;//subtract an integer
+ 00000082  E2 F4			loop L2							;//repeat until RCX = 0
+ 00000084  E8 00000000 E		call WriteInt64					;//outputs the result to the console
+
+ 00000089  48/ BA			mov rdx,offset endl				;//moves into edx register the endl message string
+	   000000000000006B R
+ 00000093  E8 00000000 E		call WriteString				;//moves the message to the console
+
+
+
+ 00000098  E8 00000000 E		call  ExitProcess				;//terminate the program
+ 0000009D			main endp							;//end main process
+				end									;//end program
+Microsoft (R) Macro Assembler (x64) Version 11.00.61030.0   11/11/14 23:38:44
+..\main.asm						     Symbols 2 - 1
+
+
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+DumpRegs . . . . . . . . . . . .	P 	 00000000 Length= 00000000 External
+ExitProcess  . . . . . . . . . .	P 	 00000000 Length= 00000000 External
+WriteInt64 . . . . . . . . . . .	P 	 00000000 Length= 00000000 External
+WriteString  . . . . . . . . . .	P 	 00000000 Length= 00000000 External
+main . . . . . . . . . . . . . .	P 	 00000000 _TEXT	Length= 0000009D Public
+  L1 . . . . . . . . . . . . . .	L 	 00000027 _TEXT	
+  L2 . . . . . . . . . . . . . .	L 	 00000078 _TEXT	
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+endl . . . . . . . . . . . . . .	Byte	 0000006B _DATA	
+intarray . . . . . . . . . . . .	QWord	 00000000 _DATA	
+msg1 . . . . . . . . . . . . . .	Byte	 00000020 _DATA	
+msg2 . . . . . . . . . . . . . .	Byte	 00000042 _DATA	
+
+	   0 Warnings
+	   0 Errors
