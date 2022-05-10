@@ -1,2 +1,10 @@
 #Holds CSUSB Computer Engineering Senior Project
 #Class of 2020
+
+***Summary***
+*Purpose:
+  -Create a small portable system to measure gait and balance. Our measurements will provide an 80% or better accuracy as compared to the gold standard.
+*Reason: 
+  -Client is using a heavy piece of machinery to measure balance in an individual. It’s weight is too heavy to be carried by one to two people and its size is massive as well. It isn’t as portable as our client would like it to be, but it is accurate. Another device is used entirely for gait analysis. So to measure gait and balance in one session is ideal. Portability was the main issue here and we solved that problem with our proposed design for smart insoles.
+*Design Goals: 
+  -Accurately measure a gait and balance performance test on a smaller more mobile device than what is currently in use.
