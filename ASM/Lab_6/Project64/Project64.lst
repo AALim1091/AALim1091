@@ -1,0 +1,174 @@
+Microsoft (R) Macro Assembler (x64) Version 11.00.61030.0   12/15/14 23:11:09
+..\main.asm						     Page 1 - 1
+
+
+				;//64-bit Assembly Language template 
+				;//Aaron Lim
+				;//CSIS-118B-4179
+				;//September 23, 2014
+				;//Lab_6
+
+				ExitProcess proto
+				WriteInt64 proto
+				ReadInt64 proto
+				WriteString proto
+
+ 00000000			.data 												;//write your data in this section
+
+ 00000000 48 6F 77 20 6D		msg1 BYTE "How many numbers would you like to enter?///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// ", 0dh,0ah,0
+	   61 6E 79 20 6E
+	   75 6D 62 65 72
+	   73 20 77 6F 75
+	   6C 64 20 79 6F
+	   75 20 6C 69 6B
+	   65 20 74 6F 20
+	   65 6E 74 65 72
+	   3F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 2F
+	   2F 2F 2F 2F 20
+	   0D 0A 00
+ 000000B2 50 6C 65 61 73		msg2 BYTE "Please Enter the numbers now ", 0dh,0ah,0
+	   65 20 45 6E 74
+	   65 72 20 74 68
+	   65 20 6E 75 6D
+	   62 65 72 73 20
+	   6E 6F 77 20 0D
+	   0A 00
+ 000000D2 54 68 65 20 73		msg3 BYTE "The sum of the numbers and FFh are: ", 0dh,0ah,0
+	   75 6D 20 6F 66
+	   20 74 68 65 20
+	   6E 75 6D 62 65
+	   72 73 20 61 6E
+	   64 20 46 46 68
+	   20 61 72 65 3A
+	   20 0D 0A 00
+ 000000F9 0D 0A 00			endl BYTE 0dh,0ah,0,
+																	
+													
+ 000000FC				count QWORD ?									;// variable set for amount of numbers to be added together,will become rcx counter for loop
+	   0000000000000000
+ 00000104				sum QWORD ?										;//holds the sum of the numbers together in the loop
+	   0000000000000000
+ 0000010C				val1 QWORD 0FFh									;//0FFh is placed in val1 variable
+	   00000000000000FF
+
+ 00000000			.code  												;//write your program here
+ 00000000			main proc
+
+ 00000000  48/ BA			mov rdx,offset msg1								;//moves into edx register the endl message string
+	   0000000000000000 R
+ 0000000A  E8 00000000 E		call WriteString								;//moves the message to the console
+ 0000000F  48/ BA			mov rdx,offset endl								;//moves into edx register the endl message string
+	   00000000000000F9 R
+ 00000019  E8 00000000 E		call WriteString								;//moves the message to the console
+
+ 0000001E  E8 00000000 E		call ReadInt64									;//calls ReadInt64 to get input from the keyboard
+ 00000023  48/ 89 05			mov count,rax									;//moves the input into the variable count
+	   000000FC R
+ 0000002A  48/ 8B 0D			mov rcx,count									;//moves the value of count to the rcx register to become the loop counter
+	   000000FC R
+					;//mov rax,0
+
+ 00000031  48/ BA			mov rdx,offset msg2								;//moves into rdx register the endl message string
+	   00000000000000B2 R
+ 0000003B  E8 00000000 E		call WriteString								;//moves the message to the console
+ 00000040  48/ BA			mov rdx,offset endl								;//moves into rdx register the endl message string
+	   00000000000000F9 R
+ 0000004A  E8 00000000 E		call WriteString								;//moves the message to the console
+
+ 0000004F			L1:													;//mark the beginning of the loop
+ 0000004F  E8 00000000 E		call ReadInt64									;//takes user input from the keyboard
+ 00000054  48/ 01 05			add sum,rax										;//takes the result of ReadInt64 and stores it into the sum variable
+	   00000104 R
+ 0000005B  48/ C7 C0			mov rax,0										;//sets rax to 0, so as not to mess up the addition process
+	   00000000
+ 00000062  E2 EB			Loop L1											;//repeat until rcx equals 0, which means taking user input and adding the value to the sum variable
+
+ 00000064  48/ 03 05			add rax,sum                                     ;//will add the sum variable to the rax register for output
+	   00000104 R
+ 0000006B  48/ 03 05			add rax,val1									;// adds the value in val1 to the value placed in rax from the sum
+	   0000010C R
+
+ 00000072  B9 00000000			mov   ecx,0										;//assign a process return code
+
+ 00000077  48/ BA			mov rdx,offset endl								;//moves into rdx register the endl message string
+	   00000000000000F9 R
+ 00000081  E8 00000000 E		call WriteString								;//moves the message to the console
+ 00000086  48/ BA			mov rdx,offset msg3								;//moves into rdx register the endl message string
+	   00000000000000D2 R
+ 00000090  E8 00000000 E		call WriteString								;//moves the message to the console
+ 00000095  48/ BA			mov rdx,offset endl								;//moves into rdx register the endl message string
+	   00000000000000F9 R
+ 0000009F  E8 00000000 E		call WriteString								;//moves the message to the console
+
+ 000000A4  E8 00000000 E		call WriteInt64									;//Writes the result from the addition of the array and val1 to the console
+
+ 000000A9  48/ BA			mov rdx,offset endl								;//moves into rdx register the endl message string
+	   00000000000000F9 R
+ 000000B3  E8 00000000 E		call WriteString								;//moves the message to the console
+ 000000B8  48/ BA			mov rdx,offset endl								;//moves into rdx register the endl message string
+	   00000000000000F9 R
+ 000000C2  E8 00000000 E		call WriteString								;//moves the message to the console
+					
+
+
+ 000000C7  E8 00000000 E		call  ExitProcess								;//terminate the program
+ 000000CC			main endp											;//end main process
+				end													;//end program
+
+Microsoft (R) Macro Assembler (x64) Version 11.00.61030.0   12/15/14 23:11:09
+..\main.asm						     Symbols 2 - 1
+
+
+
+
+Procedures, parameters, and locals:
+
+                N a m e                 Type     Value    Attr
+
+ExitProcess  . . . . . . . . . .	P 	 00000000 Length= 00000000 External
+ReadInt64  . . . . . . . . . . .	P 	 00000000 Length= 00000000 External
+WriteInt64 . . . . . . . . . . .	P 	 00000000 Length= 00000000 External
+WriteString  . . . . . . . . . .	P 	 00000000 Length= 00000000 External
+main . . . . . . . . . . . . . .	P 	 00000000 _TEXT	Length= 000000CC Public
+  L1 . . . . . . . . . . . . . .	L 	 0000004F _TEXT	
+
+
+Symbols:
+
+                N a m e                 Type     Value    Attr
+
+count  . . . . . . . . . . . . .	QWord	 000000FC _DATA	
+endl . . . . . . . . . . . . . .	Byte	 000000F9 _DATA	
+msg1 . . . . . . . . . . . . . .	Byte	 00000000 _DATA	
+msg2 . . . . . . . . . . . . . .	Byte	 000000B2 _DATA	
+msg3 . . . . . . . . . . . . . .	Byte	 000000D2 _DATA	
+sum  . . . . . . . . . . . . . .	QWord	 00000104 _DATA	
+val1 . . . . . . . . . . . . . .	QWord	 0000010C _DATA	
+
+	   0 Warnings
+	   0 Errors
