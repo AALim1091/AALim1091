@@ -1,0 +1,17 @@
+﻿Build started 12/7/2014 11:39:14 PM.
+     1>Project "C:\Users\A-A-Ron\Documents\Visual Studio 2012\Projects\ASM\Lab_14_15\Project.vcxproj" on node 2 (Build target(s)).
+     1>_MASM:
+         Assembling main.asm...
+         cmd.exe /C "C:\Users\A-A-Ron\AppData\Local\Temp\tmp7311ca079ad94bfcbe89bf83eb168363.cmd"
+         ml.exe /c /nologo /Sg /WX /Zi /Fo"Debug\main.obj" /Fl"Project.lst" /I "c:\Irvine" /W3 /errorReport:prompt  /Tamain.asm
+     1>main.asm(131): error A2022: instruction operands must be the same size
+     1>main.asm(132): error A2022: instruction operands must be the same size
+     1>main.asm(137): error A2022: instruction operands must be the same size
+     1>main.asm(151): error A2022: instruction operands must be the same size
+     1>main.asm(157): error A2022: instruction operands must be the same size
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\BuildCustomizations\masm.targets(49,5): error MSB3721: The command "ml.exe /c /nologo /Sg /WX /Zi /Fo"Debug\main.obj" /Fl"Project.lst" /I "c:\Irvine" /W3 /errorReport:prompt  /Tamain.asm" exited with code 1.
+     1>Done Building Project "C:\Users\A-A-Ron\Documents\Visual Studio 2012\Projects\ASM\Lab_14_15\Project.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.14
