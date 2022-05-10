@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prob7_Check Max Occurrence of the Character in the String", "prob7_Check Max Occurrence of the Character in the String.csproj", "{D15EA4FF-8EE5-46B3-9464-0C4D3C2C765C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D15EA4FF-8EE5-46B3-9464-0C4D3C2C765C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D15EA4FF-8EE5-46B3-9464-0C4D3C2C765C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D15EA4FF-8EE5-46B3-9464-0C4D3C2C765C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D15EA4FF-8EE5-46B3-9464-0C4D3C2C765C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EAC302E6-7E8C-4C89-8720-969F6C554323}
+	EndGlobalSection
+EndGlobal
