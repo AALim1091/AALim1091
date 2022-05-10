@@ -1,0 +1,8 @@
+D:\Program Files\Microsoft Visual Studio\source\repos\prob3_Reverse a string\prob3_Reverse a string\bin\Debug\prob3_Reverse a string.exe.config
+D:\Program Files\Microsoft Visual Studio\source\repos\prob3_Reverse a string\prob3_Reverse a string\bin\Debug\prob3_Reverse a string.exe
+D:\Program Files\Microsoft Visual Studio\source\repos\prob3_Reverse a string\prob3_Reverse a string\bin\Debug\prob3_Reverse a string.pdb
+D:\Program Files\Microsoft Visual Studio\source\repos\prob3_Reverse a string\prob3_Reverse a string\obj\Debug\prob3_Reverse a string.csproj.AssemblyReference.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\prob3_Reverse a string\prob3_Reverse a string\obj\Debug\prob3_Reverse a string.csproj.SuggestedBindingRedirects.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\prob3_Reverse a string\prob3_Reverse a string\obj\Debug\prob3_Reverse a string.csproj.CoreCompileInputs.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\prob3_Reverse a string\prob3_Reverse a string\obj\Debug\prob3_Reverse a string.exe
+D:\Program Files\Microsoft Visual Studio\source\repos\prob3_Reverse a string\prob3_Reverse a string\obj\Debug\prob3_Reverse a string.pdb

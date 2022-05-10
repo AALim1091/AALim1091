@@ -1,0 +1,8 @@
+D:\Program Files\Microsoft Visual Studio\source\repos\Prob1_Find duplicate characters in a string\Prob1_Find duplicate characters in a string\bin\Debug\Prob1_Find duplicate characters in a string.exe.config
+D:\Program Files\Microsoft Visual Studio\source\repos\Prob1_Find duplicate characters in a string\Prob1_Find duplicate characters in a string\bin\Debug\Prob1_Find duplicate characters in a string.exe
+D:\Program Files\Microsoft Visual Studio\source\repos\Prob1_Find duplicate characters in a string\Prob1_Find duplicate characters in a string\bin\Debug\Prob1_Find duplicate characters in a string.pdb
+D:\Program Files\Microsoft Visual Studio\source\repos\Prob1_Find duplicate characters in a string\Prob1_Find duplicate characters in a string\obj\Debug\Prob1_Find duplicate characters in a string.csproj.AssemblyReference.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\Prob1_Find duplicate characters in a string\Prob1_Find duplicate characters in a string\obj\Debug\Prob1_Find duplicate characters in a string.csproj.SuggestedBindingRedirects.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\Prob1_Find duplicate characters in a string\Prob1_Find duplicate characters in a string\obj\Debug\Prob1_Find duplicate characters in a string.csproj.CoreCompileInputs.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\Prob1_Find duplicate characters in a string\Prob1_Find duplicate characters in a string\obj\Debug\Prob1_Find duplicate characters in a string.exe
+D:\Program Files\Microsoft Visual Studio\source\repos\Prob1_Find duplicate characters in a string\Prob1_Find duplicate characters in a string\obj\Debug\Prob1_Find duplicate characters in a string.pdb

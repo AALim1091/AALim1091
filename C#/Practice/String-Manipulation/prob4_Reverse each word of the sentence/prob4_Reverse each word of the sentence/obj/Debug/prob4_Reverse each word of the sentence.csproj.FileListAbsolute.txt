@@ -1,0 +1,8 @@
+D:\Program Files\Microsoft Visual Studio\source\repos\prob4_Reverse each word of the sentence\prob4_Reverse each word of the sentence\bin\Debug\prob4_Reverse each word of the sentence.exe.config
+D:\Program Files\Microsoft Visual Studio\source\repos\prob4_Reverse each word of the sentence\prob4_Reverse each word of the sentence\bin\Debug\prob4_Reverse each word of the sentence.exe
+D:\Program Files\Microsoft Visual Studio\source\repos\prob4_Reverse each word of the sentence\prob4_Reverse each word of the sentence\bin\Debug\prob4_Reverse each word of the sentence.pdb
+D:\Program Files\Microsoft Visual Studio\source\repos\prob4_Reverse each word of the sentence\prob4_Reverse each word of the sentence\obj\Debug\prob4_Reverse each word of the sentence.csproj.AssemblyReference.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\prob4_Reverse each word of the sentence\prob4_Reverse each word of the sentence\obj\Debug\prob4_Reverse each word of the sentence.csproj.SuggestedBindingRedirects.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\prob4_Reverse each word of the sentence\prob4_Reverse each word of the sentence\obj\Debug\prob4_Reverse each word of the sentence.csproj.CoreCompileInputs.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\prob4_Reverse each word of the sentence\prob4_Reverse each word of the sentence\obj\Debug\prob4_Reverse each word of the sentence.exe
+D:\Program Files\Microsoft Visual Studio\source\repos\prob4_Reverse each word of the sentence\prob4_Reverse each word of the sentence\obj\Debug\prob4_Reverse each word of the sentence.pdb
