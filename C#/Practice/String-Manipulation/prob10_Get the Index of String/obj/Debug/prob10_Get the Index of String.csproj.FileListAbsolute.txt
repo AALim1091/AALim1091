@@ -1,0 +1,8 @@
+D:\Program Files\Microsoft Visual Studio\source\repos\prob10_Get the Index of String\bin\Debug\prob10_Get the Index of String.exe.config
+D:\Program Files\Microsoft Visual Studio\source\repos\prob10_Get the Index of String\bin\Debug\prob10_Get the Index of String.exe
+D:\Program Files\Microsoft Visual Studio\source\repos\prob10_Get the Index of String\bin\Debug\prob10_Get the Index of String.pdb
+D:\Program Files\Microsoft Visual Studio\source\repos\prob10_Get the Index of String\obj\Debug\prob10_Get the Index of String.csproj.SuggestedBindingRedirects.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\prob10_Get the Index of String\obj\Debug\prob10_Get the Index of String.csproj.CoreCompileInputs.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\prob10_Get the Index of String\obj\Debug\prob10_Get the Index of String.exe
+D:\Program Files\Microsoft Visual Studio\source\repos\prob10_Get the Index of String\obj\Debug\prob10_Get the Index of String.pdb
+D:\Program Files\Microsoft Visual Studio\source\repos\prob10_Get the Index of String\obj\Debug\prob10_Get the Index of String.csproj.AssemblyReference.cache

@@ -1,0 +1,8 @@
+D:\Program Files\Microsoft Visual Studio\source\repos\prob7_Check Max Occurrence of the Character in the String\bin\Debug\prob7_Check Max Occurrence of the Character in the String.exe.config
+D:\Program Files\Microsoft Visual Studio\source\repos\prob7_Check Max Occurrence of the Character in the String\bin\Debug\prob7_Check Max Occurrence of the Character in the String.exe
+D:\Program Files\Microsoft Visual Studio\source\repos\prob7_Check Max Occurrence of the Character in the String\bin\Debug\prob7_Check Max Occurrence of the Character in the String.pdb
+D:\Program Files\Microsoft Visual Studio\source\repos\prob7_Check Max Occurrence of the Character in the String\obj\Debug\prob7_Check Max Occurrence of the Character in the String.csproj.AssemblyReference.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\prob7_Check Max Occurrence of the Character in the String\obj\Debug\prob7_Check Max Occurrence of the Character in the String.csproj.SuggestedBindingRedirects.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\prob7_Check Max Occurrence of the Character in the String\obj\Debug\prob7_Check Max Occurrence of the Character in the String.csproj.CoreCompileInputs.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\prob7_Check Max Occurrence of the Character in the String\obj\Debug\prob7_Check Max Occurrence of the Character in the String.exe
+D:\Program Files\Microsoft Visual Studio\source\repos\prob7_Check Max Occurrence of the Character in the String\obj\Debug\prob7_Check Max Occurrence of the Character in the String.pdb

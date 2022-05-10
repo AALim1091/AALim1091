@@ -1,0 +1,7 @@
+D:\Program Files\Microsoft Visual Studio\source\repos\prob8_Get All Possible Substring in a String\bin\Debug\prob8_Get All Possible Substring in a String.exe.config
+D:\Program Files\Microsoft Visual Studio\source\repos\prob8_Get All Possible Substring in a String\bin\Debug\prob8_Get All Possible Substring in a String.exe
+D:\Program Files\Microsoft Visual Studio\source\repos\prob8_Get All Possible Substring in a String\bin\Debug\prob8_Get All Possible Substring in a String.pdb
+D:\Program Files\Microsoft Visual Studio\source\repos\prob8_Get All Possible Substring in a String\obj\Debug\prob8_Get All Possible Substring in a String.csproj.SuggestedBindingRedirects.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\prob8_Get All Possible Substring in a String\obj\Debug\prob8_Get All Possible Substring in a String.csproj.CoreCompileInputs.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\prob8_Get All Possible Substring in a String\obj\Debug\prob8_Get All Possible Substring in a String.exe
+D:\Program Files\Microsoft Visual Studio\source\repos\prob8_Get All Possible Substring in a String\obj\Debug\prob8_Get All Possible Substring in a String.pdb

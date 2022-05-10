@@ -1,0 +1,8 @@
+D:\Program Files\Microsoft Visual Studio\source\repos\prob6_Check if a string is a palindrome or not\prob6_Check if a string is a palindrome or not\bin\Debug\prob6_Check if a string is a palindrome or not.exe.config
+D:\Program Files\Microsoft Visual Studio\source\repos\prob6_Check if a string is a palindrome or not\prob6_Check if a string is a palindrome or not\bin\Debug\prob6_Check if a string is a palindrome or not.exe
+D:\Program Files\Microsoft Visual Studio\source\repos\prob6_Check if a string is a palindrome or not\prob6_Check if a string is a palindrome or not\bin\Debug\prob6_Check if a string is a palindrome or not.pdb
+D:\Program Files\Microsoft Visual Studio\source\repos\prob6_Check if a string is a palindrome or not\prob6_Check if a string is a palindrome or not\obj\Debug\prob6_Check if a string is a palindrome or not.csproj.AssemblyReference.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\prob6_Check if a string is a palindrome or not\prob6_Check if a string is a palindrome or not\obj\Debug\prob6_Check if a string is a palindrome or not.csproj.SuggestedBindingRedirects.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\prob6_Check if a string is a palindrome or not\prob6_Check if a string is a palindrome or not\obj\Debug\prob6_Check if a string is a palindrome or not.csproj.CoreCompileInputs.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\prob6_Check if a string is a palindrome or not\prob6_Check if a string is a palindrome or not\obj\Debug\prob6_Check if a string is a palindrome or not.exe
+D:\Program Files\Microsoft Visual Studio\source\repos\prob6_Check if a string is a palindrome or not\prob6_Check if a string is a palindrome or not\obj\Debug\prob6_Check if a string is a palindrome or not.pdb

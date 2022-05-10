@@ -1,0 +1,7 @@
+D:\Program Files\Microsoft Visual Studio\source\repos\prob9_Get theFirst Char of Each Word in Capital Letter\bin\Debug\prob9_Get theFirst Char of Each Word in Capital Letter.exe.config
+D:\Program Files\Microsoft Visual Studio\source\repos\prob9_Get theFirst Char of Each Word in Capital Letter\bin\Debug\prob9_Get theFirst Char of Each Word in Capital Letter.exe
+D:\Program Files\Microsoft Visual Studio\source\repos\prob9_Get theFirst Char of Each Word in Capital Letter\bin\Debug\prob9_Get theFirst Char of Each Word in Capital Letter.pdb
+D:\Program Files\Microsoft Visual Studio\source\repos\prob9_Get theFirst Char of Each Word in Capital Letter\obj\Debug\prob9_Get theFirst Char of Each Word in Capital Letter.csproj.SuggestedBindingRedirects.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\prob9_Get theFirst Char of Each Word in Capital Letter\obj\Debug\prob9_Get theFirst Char of Each Word in Capital Letter.csproj.CoreCompileInputs.cache
+D:\Program Files\Microsoft Visual Studio\source\repos\prob9_Get theFirst Char of Each Word in Capital Letter\obj\Debug\prob9_Get theFirst Char of Each Word in Capital Letter.exe
+D:\Program Files\Microsoft Visual Studio\source\repos\prob9_Get theFirst Char of Each Word in Capital Letter\obj\Debug\prob9_Get theFirst Char of Each Word in Capital Letter.pdb
